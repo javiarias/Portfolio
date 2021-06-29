@@ -60,7 +60,7 @@ div.gallery  h3 {
 }
 
 body {
-  font-family: "Space Mono", Arial, serif;
+  font-family: "Ubuntu", Arial, serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -96,13 +96,13 @@ body {
 }
 
 a {
-  color: coral;
+  color: #0094ca;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: coral;
+  color: #0094ca;
   outline: none;
   text-decoration: none;
 }
@@ -113,24 +113,24 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Space Mono", Arial, serif;
+  font-family: "Ubuntu", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: coral;
+  background: #0094ca;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: coral;
+  background: #0094ca;
 }
 
 ::selection {
   color: #fff;
-  background: coral;
+  background: #0094ca;
 }
 
 #fh5co-header,
@@ -337,8 +337,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-work,
 #fh5co-resume,
 #fh5co-art {
-  background: #646464;
+  border: #646464;
   border-radius: 15px;
+  border-width: 100rem;
   margin: 2%;
 }
 
@@ -395,7 +396,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li {
   width: 100%;
   float: left;
-  list-style: square ;
+  list-style: square;
   padding: 10px 0;
 }
 .info li:first-child {
@@ -1212,7 +1213,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Space Mono", Arial, serif;
+  font-family: "Ubuntu", Arial, serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
