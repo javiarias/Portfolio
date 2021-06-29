@@ -55,30 +55,6 @@ const teamGames = [
         download: "https://freestylers-studio.itch.io/a-toda-pastilla",
         source: "https://github.com/freesstylers/A-Toda-Pastilla",
         description: "An infinite bullet hell game"
-    },
-    {
-        projectName: "A Toda Pastilla",
-        projectType: '"Motor Casa Paco" (C++)',
-        imageSrc: "images/games/pastilla.png",
-        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
-        source: "https://github.com/freesstylers/A-Toda-Pastilla",
-        description: "An infinite bullet hell game"
-    },
-    {
-        projectName: "A Toda Pastilla",
-        projectType: '"Motor Casa Paco" (C++)',
-        imageSrc: "images/games/pastilla.png",
-        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
-        source: "https://github.com/freesstylers/A-Toda-Pastilla",
-        description: "An infinite bullet hell game"
-    },
-    {
-        projectName: "A Toda Pastilla",
-        projectType: '"Motor Casa Paco" (C++)',
-        imageSrc: "images/games/pastilla.png",
-        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
-        source: "https://github.com/freesstylers/A-Toda-Pastilla",
-        description: "An infinite bullet hell game"
     }
 ];
 
