@@ -6,17 +6,6 @@
   font-style: normal;
 }
 
-@media (min-width: 768px){
-  .navbar-nav, .navbar-brand{
-      display: inline-block;
-      float: none;
-      vertical-align: top;
-      margin: 0 auto;
-      display: table;
-      table-layout: fixed;
-  }
-}
-
 .dot
 {
   color: #d7d4d4;
@@ -65,7 +54,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #4d4d4d;
-  background: #fff;
+  background: #d4e1e7;
 }
 
 #page {
@@ -1414,6 +1403,7 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+  font-size: small;
 }
 
 /*# sourceMappingURL=style.css.map */

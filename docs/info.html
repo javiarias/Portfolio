@@ -2,20 +2,17 @@
 <html>
 
 	<head>
-		<!-- Google Tag Manager -->
-		<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-P72V2GD');
-		</script>
-		<!-- End Google Tag Manager -->
 	
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Javier Arias' Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
 	
 		<link rel="icon" href="images/logo.png" type="image/jpg">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +24,7 @@
 		<!-- Icomoon Icon Fonts-->
 		<link rel="stylesheet" href="css/icomoon.css">
 		<!-- Bootstrap  -->
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<!-- Bootstrap Font Icon CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 		<!-- FontAwesome Font Icon CSS because for whatever reason Bootstrap doesn't have an itch.io icon? -->
@@ -35,95 +32,72 @@
 	
 	
 	
-		<!-- Theme style  -->
-		<link rel="stylesheet" href="css/style.css">
-	
-		<!-- Modernizr JS -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 	
 	</head>
 	
 	<body>
 	
-		<div class="fh5co-loader"></div><!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P72V2GD"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+		<!-----------------------------------------------------------------------------------------------------------------------|
+		|                                                                                                                        |
+		|                                                      Navbar                                                            |
+		|                                                                                                                        |
+		|------------------------------------------------------------------------------------------------------------------------>
+
+		<header>
+			<nav class="navbar navbar-light navbar-expand bg-light justify-content-center">
+				<span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+				<a href="index.html"><h1 class="coral" style="margin-top: 15%;" >Javier Arias</h1></a>
+				</div>
+			</nav>
+
+			<nav class="navbar navbar-light navbar-expand bg-light justify-content-center">
+	
+				<div class="w-100 justify-content-center">
+					<ul class="navbar-nav w-100 justify-content-center">
+						<li class="nav-item"><a class="nav-link" href="index.html"> <i class="bi bi-controller"></i> My Work <span class="sr-only">(current)</span></a></li>
+						<li class="nav-item active" id="aboutBtn"><a class="nav-link" href="info.html"> <i class="bi bi-person"></i> About</a></li>
+						<li class="nav-item" id="aboutBtn"><a class="nav-link" href="resume.html"> <i class="bi bi-file-earmark-person"></i> My Resume</a></li>
+						<li class="nav-item" id="aboutBtn"><a class="nav-link" href="contact.html"> <i class="bi bi-telephone bi-5x"></i> Contact </a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<nav class="navbar navbar-light navbar-expand bg-light justify-content-center">
+	
+				<div class="w-100" id="navbar-collapse-1">
+					<ul class="navbar-nav w-100 justify-content-center">
+						<li class="nav-item">
+							<button class="btn btn-light">
+								<a href="https://github.com/javiarias">
+									<i class="bi bi-github"></i>
+								</a>
+							</button></li>
+						<li class="nav-item">
+						<button class="btn btn-light">
+							<a href="https://radape.itch.io/">
+								<i class="fab fa-itch-io"></i>
+							</a>
+						</button></li>
+						<li class="nav-item">
+						<button class="btn btn-light">
+							<a href="https://www.linkedin.com/in/javier-arias-6b219a202/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button></li>
+						<li class="nav-item">
+						<button class="btn btn-light">
+							<a href="mailto:franciscojavieragz@gmail.com">
+								<i class="bi bi-envelope-fill"></i>
+							</a>
+						</button></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 	
 		<div id="page">
-	
-			<!-----------------------------------------------------------------------------------------------------------------------|
-			|                                                                                                                        |
-			|                                                      Navbar                                                            |
-			|                                                                                                                        |
-			|------------------------------------------------------------------------------------------------------------------------>
-	
-			<header>
-				<div class="row text-center">
-					<a href="#"><h1 class="coral" style="margin: 2%;" >Javier Arias</h1></a>
-				</div>
-				
-				<div class="row" style="margin: 0%;">
-					<nav class="navbar navbar-default ">
-						
-						<div class="row" style="margin: 1%;">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-								data-target="#navbar-collapse-1" aria-expanded="false" >
-								<span class="sr-only">Toggle navigation</span>
-								<i class="bi bi-list"></i>
-							</button>
-				
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="navbar-collapse-1">
-								<ul class="nav navbar-nav">
-									<li class="nav-item"><a class="nav-link" href="index.html"> <i class="bi bi-controller"></i> My Work <span class="sr-only">(current)</span></a></li>
-									<li class="nav-item active" id="aboutBtn"><a class="nav-link" href="info.html"> <i class="bi bi-person"></i> About</a></li>
-									<li class="nav-item" id="aboutBtn"><a class="nav-link" href="resume.html"> <i class="bi bi-file-earmark-person"></i> My Resume</a></li>
-									<li class="nav-item" id="aboutBtn"><a class="nav-link" href="contact.html"> <i class="bi bi-telephone bi-5x"></i> Contact </a></li>
-								</ul>
-							</div>
-						</div>
-						
-						<div class="row"  style="margin: 1%;">
-			
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-								data-target="#navbar-collapse-2" aria-expanded="false" >
-								<span class="sr-only">Toggle navigation</span>
-								<i class="bi bi-file-person"></i>
-							</button>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="navbar-collapse-2">
-								<ul class="nav navbar-nav">
-									<li class="nav-item"><a href="https://github.com/javiarias">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle fa-stack-2x dot"></i>
-											<i class="bi bi-github fa-stack-1x"></i>
-										</span>
-									</a></li>
-									<li class="nav-item"><a href="https://radape.itch.io/">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle fa-stack-2x dot"></i>
-											<i class="fab fa-itch-io fa-stack-1x"></i>
-										</span>
-									</a></li>
-									<li class="nav-item"><a href="https://www.linkedin.com/in/javier-arias-6b219a202/">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle fa-stack-2x dot"></i>
-											<i class="bi bi-linkedin fa-stack-1x"></i>
-										</span>
-									</a></li>
-									<li class="nav-item"><a href="mailto:franciscojavieragz@gmail.com">
-										<span class="fa-stack fa-lg">
-											<i class="fa fa-circle fa-stack-2x dot"></i>
-											<i class="bi bi-envelope-fill fa-stack-1x"></i>
-										</span>
-									</a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
-			</header>
 
 		<!-----------------------------------------------------------------------------------------------------------------------|
 		|                                                                                                                        |
@@ -131,43 +105,43 @@
 		|                                                                                                                        |
 		|------------------------------------------------------------------------------------------------------------------------->
 		<section id="about">
-			<div id="fh5co-about" class="animate-box">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-							<h2>About Me</h2>
-						</div>
+			<div id="fh5co-about">
+				<div class="container-fluid">
+					<div class="d-flex justify-content-center  fh5co-heading-white">
+						<h2>About Me</h2>
 					</div>
-					<div>
-						<p>
-							I've always had a deep connection with video games, and ever since I was a small child I've dreamt of the day I could be the one behind the wheels, making things work,
-							watching things break and fixing them back up. It's only logical then, that I would end up teaching myself how to make my own, and eventually
-							taking a degree in Game Development so I could dedicate myself to it, professionally. 
-						</p>
+					<div class="d-flex justify-content-center">
+						<div style="width: 50%;">
+							<p>
+								I've always had a deep connection with video games, and ever since I was a small child I've dreamt of the day I could be the one behind the wheels, making things work,
+								watching things break and fixing them back up. It's only logical then, that I would end up teaching myself how to make my own, and eventually
+								taking a degree in Game Development so I could dedicate myself to it, professionally. 
+							</p>
 
-						<p id="experience">
-							I have ## years of experience designing and programming games, from small personal fan works to bigger projects made working with full development teams.
-							Most of these projects so far have been small, so I've had to learn a bit of everything to keep up with the work, including <b>3D modelling, development of REST APIs, 
-							spriting, texturing</b> or <b> working with NoSQL databases.
-							</b>
-						</p>
+							<p id="experience">
+								I have ## years of experience designing and programming games, from small personal fan works to bigger projects made working with full development teams.
+								Most of these projects so far have been small, so I've had to learn a bit of everything to keep up with the work, including <b>3D modelling, development of REST APIs, 
+								spriting, texturing</b> or <b> working with NoSQL databases.
+								</b>
+							</p>
 
 
-						<script>
-							var d = new Date();
-							var n = d.getFullYear() - 2016;
+							<script>
+								var d = new Date();
+								var n = d.getFullYear() - 2016;
 
-							document.getElementById("experience").innerHTML = document.getElementById("experience").innerHTML.replace("##", n);
-						</script>
+								document.getElementById("experience").innerHTML = document.getElementById("experience").innerHTML.replace("##", n);
+							</script>
 
-						<p>
-							Despite this, my main fields of expertise are the following:
-							<ol>
-								<li>Programming</li>
-								<li>Game Design</li>
-								<li>UI Design</li>
-							</ol>
-						</p>
+							<p>
+								Despite this, my main fields of expertise are the following:
+								<ol>
+									<li>Programming</li>
+									<li>Game Design</li>
+									<li>UI Design</li>
+								</ol>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -178,72 +152,79 @@
 			|                                                                                                                        |
 			|------------------------------------------------------------------------------------------------------------------------->
 			<div id="fh5co-skills" class="animate-box">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-							<h2>My Skills</h2>
-						</div>
+				<div class="container-fluid">
+					<div class="d-flex justify-content-center fh5co-heading-white">
+						<h2>My Skills</h2>
 					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="row skills-row">
-								<h3>Languages</h3>
-								<div class="col-md-12">
-								<ul class="info">
-									<li>Spanish (native)</li>
-									<li>English (proficient)</li>
-								</ul>
+					<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center" style="width: 50%;">
+							<div class="col justify-content-center">
+								<div class="row">
+									<h3>Languages</h3>
+									<div class="col-md-12">
+										<ul class="info">
+											<li>Spanish (native)</li>
+											<li>English (proficient)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Programming Languages</h3>
+									<div class="d-flex justify-content-between">
+										<div class="col">
+											<ul class="info">
+												<li>C#</li>
+												<li>C++</li>
+												<li>C</li>
+												<li>Java</li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="info">
+												<li>JavaScript</li>
+												<li>Python</li>
+												<li>Ruby</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="row skills-row">
-								<h3>Programming Languages</h3>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>C#</li>
-										<li>C++</li>
-										<li>C</li>
-										<li>Java</li>
-									</ul>
+
+							<div class="col justify-content-center">
+								<div class="row">
+									<h3>Engines</h3>
+									<div class="d-flex justify-content-between">
+										<div class="col">
+											<ul class="info">
+												<li>Unity</li>
+												<li>GameMaker Studio</li>
+												<li>Phaser</li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="info">
+												<li>RPGMaker XP</li>
+												<li>Custom Engine <br> ("Motor Casa Paco")</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>JavaScript</li>
-										<li>Python</li>
-										<li>Ruby</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="row skills-row">
-								<h3>Engines</h3>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>Unity</li>
-										<li>GameMaker Studio</li>
-										<li>Phaser</li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>RPGMaker XP</li>
-										<li>Custom Engine <br> ("Motor Casa Paco")</li>
-									</ul>
-								</div>
-							</div>
-							<div class="row skills-row">
-								<h3>Other Skills</h3>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>MongoDB</li>
-										<li>Blender 3D</li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul class="info">
-										<li>OpenGL</li>
-										<li>REST APIs</li>
-									</ul>
+								<div class="row">
+									<h3>Other Skills</h3>
+									<div class="d-flex justify-content-between">
+										<div class="col">
+											<ul class="info">
+												<li>MongoDB</li>
+												<li>Blender 3D</li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="info">
+												<li>OpenGL</li>
+												<li>REST APIs</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

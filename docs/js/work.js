@@ -55,6 +55,30 @@ const teamGames = [
         download: "https://freestylers-studio.itch.io/a-toda-pastilla",
         source: "https://github.com/freesstylers/A-Toda-Pastilla",
         description: "An infinite bullet hell game"
+    },
+    {
+        projectName: "A Toda Pastilla",
+        projectType: '"Motor Casa Paco" (C++)',
+        imageSrc: "images/games/pastilla.png",
+        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
+        source: "https://github.com/freesstylers/A-Toda-Pastilla",
+        description: "An infinite bullet hell game"
+    },
+    {
+        projectName: "A Toda Pastilla",
+        projectType: '"Motor Casa Paco" (C++)',
+        imageSrc: "images/games/pastilla.png",
+        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
+        source: "https://github.com/freesstylers/A-Toda-Pastilla",
+        description: "An infinite bullet hell game"
+    },
+    {
+        projectName: "A Toda Pastilla",
+        projectType: '"Motor Casa Paco" (C++)',
+        imageSrc: "images/games/pastilla.png",
+        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
+        source: "https://github.com/freesstylers/A-Toda-Pastilla",
+        description: "An infinite bullet hell game"
     }
 ];
 
@@ -63,32 +87,28 @@ const personalProjects = [
 ];
 
 document.getElementById("section-work").innerHTML = `
-
-<div id="fh5co-work">
-		<div class="container-fluid">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-					<h2>Games/Projects I've worked on</h2>
-				</div>
-            </div>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center fh5co-heading-white">
+            <h2>Games/Projects I've worked on</h2>
+        </div>
+        <div class="container-fluid">
             <div class="row">
                 ${teamGames.map(function (project) {
                 return `
-                    <div class="col-lg-2 col-md-3 col-sm-6 d-flex align-items-stretch animate-box ">
+                    <div class="col-lg-2 col-md-3 col-6" style="margin-bottom:10px;">
                         <div class="card">
                             
-                            <img src="${project.imageSrc}" class="card-img-top"/>
+                            <img src="${project.imageSrc}" class="card-img-top" style="padding:5%;"/>
 
-                            <div class="card-body" style="height:30rem;">
+                            <div class="card-body">
                                 <h4 class="card-title coral">${project.projectName} </h4>
-                                <div class="card-text">
-                                    ${(project.download == undefined) ? "" : '<button class="column"><a href="' + project.download + '" target="_blank"> Download </a> </button>'}
-                                    ${(project.source == undefined) ? "" : '<button class="column"><a href="' + project.source + '" target="_blank"> Source </a> </button>'}
-                                </div>
-                                <br>
-                                <h4 class="card-text" style="color:black;">${project.projectType} </h4>
+                                <h5 class="card-text" style="color:black;">${project.projectType} </h5>
                                 <h5 class="card-text" style="color:black;">${project.description} </h5>
                                 <h5 class="card-text" style="color:black;">${(project.extra == undefined) ? "" : project.extra} </h5>
+                            </div>
+                            <div class="card-footer">
+                                ${(project.download == undefined) ? "" : '<button class="column"><a href="' + project.download + '" target="_blank"> Download </a> </button>'}
+                                ${(project.source == undefined) ? "" : '<button class="column"><a href="' + project.source + '" target="_blank"> Source </a> </button>'}
                             </div>
                         </div>
                     </div>
@@ -97,7 +117,6 @@ document.getElementById("section-work").innerHTML = `
             </div>
         </div>
     </div>
-</div>
 `
 
 if(personalProjects.length > 0)
