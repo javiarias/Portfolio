@@ -75,8 +75,8 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li class="nav-item active"><a class="nav-link" href="index.html"> <i class="bi bi-controller"></i> My Work <span class="sr-only">(current)</span></a></li>
-									<li class="nav-item" id="aboutBtn"><a class="nav-link" href="info.html"> <i class="bi bi-person"></i> About</a></li>
+									<li class="nav-item"><a class="nav-link" href="index.html"> <i class="bi bi-controller"></i> My Work <span class="sr-only">(current)</span></a></li>
+									<li class="nav-item active" id="aboutBtn"><a class="nav-link" href="info.html"> <i class="bi bi-person"></i> About</a></li>
 									<li class="nav-item" id="aboutBtn"><a class="nav-link" href="resume.html"> <i class="bi bi-file-earmark-person"></i> My Resume</a></li>
 									<li class="nav-item" id="aboutBtn"><a class="nav-link" href="contact.html"> <i class="bi bi-telephone bi-5x"></i> Contact </a></li>
 								</ul>
@@ -126,16 +126,130 @@
 
 		<!-----------------------------------------------------------------------------------------------------------------------|
 		|                                                                                                                        |
-		|                                                            Works                                                       |
+		|                                                      About                                                             |
 		|                                                                                                                        |
 		|------------------------------------------------------------------------------------------------------------------------->
+		<section id="about">
+			<div id="fh5co-about" class="animate-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>About Me</h2>
+						</div>
+					</div>
+					<div>
+						<p>
+							I've always had a deep connection with video games, and ever since I was a small child I've dreamt of the day I could be the one behind the wheels, making things work,
+							watching things break and fixing them back up. It's only logical then, that I would end up teaching myself how to make my own, and eventually
+							taking a degree in Game Development so I could dedicate myself to it, professionally. 
+						</p>
 
-		<center>
-			<div id="section-personal">
+						<p id="experience">
+							I have ## years of experience designing and programming games, from small personal fan works to bigger projects made working with full development teams.
+							Most of these projects so far have been small, so I've had to learn a bit of everything to keep up with the work, including <b>3D modelling, development of REST APIs, 
+							spriting, texturing</b> or <b> working with NoSQL databases.
+							</b>
+						</p>
+
+
+						<script>
+							var d = new Date();
+							var n = d.getFullYear() - 2016;
+
+							document.getElementById("experience").innerHTML = document.getElementById("experience").innerHTML.replace("##", n);
+						</script>
+
+						<p>
+							Despite this, my main fields of expertise are the following:
+							<ol>
+								<li>Programming</li>
+								<li>Game Design</li>
+								<li>UI Design</li>
+							</ol>
+						</p>
+					</div>
+				</div>
 			</div>
-			<div id="section-work">
+
+			<!-----------------------------------------------------------------------------------------------------------------------|
+			|                                                                                                                        |
+			|                                                            Skills                                                      |
+			|                                                                                                                        |
+			|------------------------------------------------------------------------------------------------------------------------->
+			<div id="fh5co-skills" class="animate-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2>My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row skills-row">
+								<h3>Languages</h3>
+								<div class="col-md-12">
+								<ul class="info">
+									<li>Spanish (native)</li>
+									<li>English (proficient)</li>
+								</ul>
+								</div>
+							</div>
+							<div class="row skills-row">
+								<h3>Programming Languages</h3>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>C#</li>
+										<li>C++</li>
+										<li>C</li>
+										<li>Java</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>JavaScript</li>
+										<li>Python</li>
+										<li>Ruby</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row skills-row">
+								<h3>Engines</h3>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>Unity</li>
+										<li>GameMaker Studio</li>
+										<li>Phaser</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>RPGMaker XP</li>
+										<li>Custom Engine <br> ("Motor Casa Paco")</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row skills-row">
+								<h3>Other Skills</h3>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>MongoDB</li>
+										<li>Blender 3D</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="info">
+										<li>OpenGL</li>
+										<li>REST APIs</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</center>
+		</section>
 
 		<div class="gototop js-top">
 			<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -157,7 +271,7 @@
 		<!-- Main -->
 		<script src="js/main.js"></script>
 
-		<script src="js/work.js"></script>
+		<!---<script src="js/skillRepeator.js"></script>--->
 
 </body>
 
