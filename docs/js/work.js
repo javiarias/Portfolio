@@ -58,11 +58,58 @@ const teamGames = [
     }
 ];
 
+const workExperience = [
+    {
+        projectName: "Cloud Imperium",
+        role: 'UI Programmer I',
+        imageSrc: "https://static.wikia.nocookie.net/starcitizen/images/9/9b/Cloud_Imperium_Games_Logo.jpg",
+        website: "https://cloudimperiumgames.com",
+        length: "2021 - 2022",
+        description: "UI programming for Star Citizen and Squadron 42",
+        extra: "Focused on porting their MobiGlas (menu hub) to a 3D projection, and updating their StarMap (interactive galaxy map)"
+    }    
+];
+
 const personalProjects = [
     
 ];
 
 document.getElementById("section-work").innerHTML = `
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center fh5co-heading-white">
+            <h2>Companies I've worked with</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                ${workExperience.map(function (project) {
+                return `
+                    <div class="col-lg-2 col-md-3 col-6" style="margin-bottom:10px;">
+                        <div class="card">
+                            
+                            <img src="${project.imageSrc}" class="card-img-top" style="padding:5%;"/>
+
+                            <div class="card-body">
+                                <h4 class="card-title coral">${project.projectName} </h4>
+                                <h6 class="card-text" style="color:black;">${project.length} </h5>
+                                <h5 class="card-text" style="color:black;">${project.role} </h5>
+                                <h5 class="card-text" style="color:black;">${project.description} </h5>
+                                <h5 class="card-text" style="color:black;">${(project.extra == undefined) ? "" : project.extra} </h5>
+                            </div>
+                            <div class="card-footer">
+                                ${(project.download == undefined) ? "" : '<button class="column"><a href="' + project.download + '" target="_blank"> Download </a> </button>'}
+                                ${(project.source == undefined) ? "" : '<button class="column"><a href="' + project.source + '" target="_blank"> Source </a> </button>'}
+                                ${(project.website == undefined) ? "" : '<button class="column"><a href="' + project.website + '" target="_blank"> Website </a> </button>'}
+                            </div>
+                        </div>
+                    </div>
+                    `
+            }).join(' ')}
+            </div>
+        </div>
+    </div>
+`
+
+document.getElementById("section-personal").innerHTML = `
     <div class="container-fluid">
         <div class="d-flex justify-content-center fh5co-heading-white">
             <h2>Games/Projects I've worked on</h2>
