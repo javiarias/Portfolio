@@ -60,6 +60,16 @@ const teamGames = [
 
 const workExperience = [
     {
+        projectName: "Infinigon Games",
+        role: 'Main UI Programmer',
+        imageSrc: "https://infinigongames.com/wp-content/uploads/2023/09/InfinigonOnlyLogo512.png",
+        website: "https://cloudimperiumgames.com",
+        length: "2022 - 2024",
+        description: "Project under NDA (release: aprox. June 2024)",
+        extra: "A minigame-based game aimed at kids based on a popular animated kids TV show, to release on PC and consoles."
+    },    
+    
+    {
         projectName: "Cloud Imperium",
         role: 'UI Programmer I',
         imageSrc: "https://static.wikia.nocookie.net/starcitizen/images/9/9b/Cloud_Imperium_Games_Logo.jpg",
@@ -67,7 +77,7 @@ const workExperience = [
         length: "2021 - 2022",
         description: "UI programming for Star Citizen and Squadron 42",
         extra: "Focused on porting their MobiGlas (menu hub) to a 3D projection, and updating their StarMap (interactive galaxy map)"
-    }    
+    },
 ];
 
 const personalProjects = [
