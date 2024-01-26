@@ -63,6 +63,7 @@ const workExperience = [
         projectName: "Infinigon Games",
         role: 'Main UI Programmer',
         imageSrc: "https://infinigongames.com/wp-content/uploads/2023/09/InfinigonOnlyLogo512.png",
+        website: "https://infinigongames.com",
         length: "2022 - 2024",
         description: "Project under NDA (release: aprox. June 2024)",
         extra: "A minigame-based game aimed at kids based on a popular animated kids TV show, to release on PC and consoles."
