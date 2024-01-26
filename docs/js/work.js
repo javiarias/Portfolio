@@ -1,99 +1,155 @@
-const teamGames = [
-    {
-        projectName: "District Dance Battle",
-        projectType: "SDL (C++)",
-        imageSrc: "images/games/ddb.png",
-        download: "https://freestylers-studio.itch.io/district-dance-battle-sdl",
-        source: "https://github.com/freesstylers/District-Dance-Battle",
-        description: "A rhythm game inspired by Dance Dance Revolution, but with a twist!",
-        extra: "Winner of the <b> Best Game Award </b> at FIMP 2019"
-    },
-    {
-        projectName: "Mauriçius Nativitatem",
-        projectType: "Unity (C#)",
-        imageSrc: "images/games/mauricius.png",
-        download: "https://freestylers-studio.itch.io/mauricius-nativitatem",
-        source: "https://github.com/freesstylers/JamOn",
-        description: "A small rhythm game inspired by the Patapon series",
-        extra: "Won <b> second place </b> at the 2021 JamOn game jam"
-    },
-    {
-        projectName: "Chromaturgia",
-        projectType: "Unity (C#)",
-        imageSrc: "images/games/chromaturgia.png",
-        download: "https://javiarias.github.io/Chromaturgia/",
-        source: "https://github.com/javiarias/Chromaturgia",
-        description: "A short puzzle game based around shooting color pellets"
-    },
-    {
-        projectName: "TeFeGe",
-        projectType: "<u>Game</u>: Unity (C#) <br> <u>Servers</u>: Mirror (C#), Express (JS)",
-        imageSrc: "images/games/tefege.png",
-        download: "https://tefege.itch.io/tefege",
-        source: "https://github.com/HoracioStudios/TFG",
-        description: "An online multiplayer twin-stick shooter, with a functioning matchmaking system. <b>Currently offline</b>"
-    },
-    {
-        projectName: "Motor Casa Paco",
-        projectType: 'Custom Game Engine (C++)',
-        imageSrc: "images/games/casapaco.png",
-        source: "https://github.com/freesstylers/Untitled-Motor",
-        description: "A custom 3D game engine made using Ogre3D, FMOD, Bullet Physics and SDL"
-    },
-    {
-        projectName: "Vaya Canicastañazos",
-        projectType: '"Motor Casa Paco" (C++)',
-        imageSrc: "images/games/canicas.png",
-        download: "https://freestylers-studio.itch.io/vaya-canicastanhazos",
-        source: "https://github.com/freesstylers/Vaya-Canicastanyazos",
-        description: "A platformer inspired by the Monkey Ball series"
-    },
-    {
-        projectName: "A Toda Pastilla",
-        projectType: '"Motor Casa Paco" (C++)',
-        imageSrc: "images/games/pastilla.png",
-        download: "https://freestylers-studio.itch.io/a-toda-pastilla",
-        source: "https://github.com/freesstylers/A-Toda-Pastilla",
-        description: "An infinite bullet hell game"
-    }
-];
-
 const workExperience = [
     {
-        projectName: "Cloud Imperium",
+        name: "Project under NDA <br>(release: aprox June 2024)",
+        role: 'Main UI Programmer / Designer, Generalist Programmer',
+        company: 'Infinigon Games, Outright Games',
+        length: "Dec 2022 - Jan 2024",
+        description: `A minigame-based game aimed at kids based on a popular animated kids TV show, to release on PC and consoles, developed for Outright Games. Due to the scale of the team I handled all of the game's UI and UX, designing most of it with the aid of our main artist, while also taking on some more general tasks when it was necessary.`,
+        list: [ `Worked in <b>C#</b> with <b>Unity</b>`, `Designed and implemented the UI according to the project owner's specifications.`, `Negotiating features keeping in mind deadlines and limitations of the engine / platform, as well as the artist's needs.`, `Optimizing resource management and UI creation as needed due to console and engine limitations.`, `Bug fixing and cleaning up prototyped code from earlier versions of the project.`, ],
+        extra: "",
+        videos: [ ],
+        images: [ "https://pm1.aminoapps.com/7515/4877b37997b83f85f36e884d12522baefd5f444cr1-540-359v2_uhq.jpg" ],
+        links: [ ],
+    },
+    {
+        name: "Star Citizen, Squadron 42",
         role: 'UI Programmer I',
-        imageSrc: "https://static.wikia.nocookie.net/starcitizen/images/9/9b/Cloud_Imperium_Games_Logo.jpg",
-        website: "https://cloudimperiumgames.com",
-        length: "2021 - 2022",
-        description: "UI programming for Star Citizen and Squadron 42",
-        extra: "Focused on porting their MobiGlas (menu hub) to a 3D projection, and updating their StarMap (interactive galaxy map)"
-    }    
-];
-
-const personalProjects = [
-    
+        company: 'Cloud Imperium Games',
+        length: "Dec 2021 - Nov 2022",
+        description: `Star Citizen is Cloud Imperium Games' main project, a large scale space sim MMO, while Squadron 42 is a focused singleplayer FPS campaign sharing the same technology. I worked on implementing UI designs shared between both projects, which due to the nature of the game involved working with many new and innovative forms of UI rendering and presentation.`,
+        list: [ `Worked in <b>C++</b> with an in-house engine based on <b>CryEngine</b>`, `Implemented a re-design of the MobiGlas, the player's menu hub, as a 3D projection on curved geometry.`, `Implemented both visual and interactive aspects of the StarMap, the game's interactive galaxy map, focusing on player navigation and information displays (orbit projections, name tags, placement of POI icons)`, ],
+        extra: "",
+        videos: [ "https://www.youtube.com/embed/BlGroDB1se4?si=h1rQqe7_7Ubo0yvV&amp;start=1949", ],
+        images: [ "https://static-cdn.jtvnw.net/jtv_user_pictures/f0f34972-b61f-490a-8e0f-0bada3ff4cf6-profile_banner-480.jpeg", ],
+        links: [ {name: "Website", link: "https://robertsspaceindustries.com"}, ],
+    },
 ];
 
 document.getElementById("section-work").innerHTML = `
     <div class="container-fluid">
-        <div class="d-flex justify-content-center fh5co-heading-white">
-            <h2>Companies I've worked with</h2>
-        </div>
         <div class="container-fluid">
-            <div class="row">
-                ${workExperience.map(function (project) {
-                return `
+                ${workExperience.map(function (project, index) {
+                    var ret = "";
+
+                        ret = `
+                                    <div class="container">
+                                        <div class="row">
+                                            `
+
+                        //media side
+
+                        var media =                  `
+                                                <div class="col-sm" style="padding:0 15px;">
+                                                    <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">`
+                    
+                                                    if(project.images != undefined)
+                                                    {
+                                                        project.images.forEach(element => {
+                                                            media += `<div> <img src="${element}" class="card-img"/> </div>`
+                                                        });
+                                                    }
+
+                        media +=                 `</div>
+                                                <div class="row" style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:left">`
+                    
+                                                if(project.videos != undefined)
+                                                {
+                                                    project.videos.forEach(element => {
+                                                        media += `<div class="col-sm embed-container">
+                                                        <iframe src="` + element + `" allowfullscreen></iframe>
+                                                    </div>`
+                                                    });
+                                                }
+
+                    media +=                 `</div>
+                                            <div class="d-flex justify-content-center">`
+                    
+                                            if(project.links != undefined)
+                                            {
+                                                project.links.forEach(element => {
+                                                    media += `
+                                                                <button style="padding: 1.5%;"><a href="${element.link}"> ${element.name} </a> </button>`
+                                                });
+                                            }
+
+                                            
+
+                    //info side
+                                            
+                    media +=                 `</div>
+
+
+                                                            
+                                            </div>`
+                                            
+                                            
+                    var info = `
+                                            <div class="col-sm center" style="padding:0 15px;">
+                                                            
+                                                                
+
+                                                <h3 class="coral" style="text-align:left;">${project.name} </h2>
+
+                                                <h5 style="text-align:left;">${project.role} </h5>
+                                                <h5 style="text-align:left;">${project.company} </h5>
+                                                <h5 style="text-align:left;">${project.length}</h5>
+
+                                                <p class="paragraph">${project.description}</p>
+
+                                                <div class="paragraph"><ul><br>
+                                                `
+                                                
+                        project.list.forEach(element => {
+                            info += `<li>
+                            ` + element + `
+                        </li>`
+                        });
+                                                
+                        info +=    
+                                                `
+                                                    </ul></div>
+                                                            
+                                            </div>
+
+                                            `
+
+
+                    if(index % 2 != 0)
+                    {
+                        ret += media + info;
+                    }
+                    else
+                    {
+                        ret += info + media;
+                    }
+
+                        ret +=         `
+                                        </div>
+                                    </div>
+                                `;
+                    if(index > 0)
+                    {
+                        ret = `<div>
+                                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+                                    <hr class="styled-hr" style="width:100%;">
+                                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+                                </div>
+                                ` + ret;
+                    }
+                return ret;
+                `
                     <div class="col-lg-2 col-md-3 col-6" style="margin-bottom:10px;">
                         <div class="card">
                             
-                            <img src="${project.imageSrc}" class="card-img-top" style="padding:5%;"/>
+                            <img src="${project.imageSrc}" class="card-img-top" style="padding:0%;"/>
 
                             <div class="card-body">
-                                <h4 class="card-title coral">${project.projectName} </h4>
-                                <h6 class="card-text" style="color:black;">${project.length} </h5>
-                                <h5 class="card-text" style="color:black;">${project.role} </h5>
-                                <h5 class="card-text" style="color:black;">${project.description} </h5>
-                                <h5 class="card-text" style="color:black;">${(project.extra == undefined) ? "" : project.extra} </h5>
+                                <h2 class="card-title coral">${project.projectName} </h4>
+                                <h8 class="card-text" style="color:black;">${project.length} </h5>
+                                <br>
+                                <h6 class="card-text" style="color:black;">${project.role} </h5>
+                                <h6 class="card-text" style="color:black;">${project.description} </h5>
+                                <h6 class="card-text" style="color:black;">${(project.extra == undefined) ? "" : project.extra} </h5>
                             </div>
                             <div class="card-footer">
                                 ${(project.download == undefined) ? "" : '<button class="column"><a href="' + project.download + '" target="_blank"> Download </a> </button>'}
@@ -104,86 +160,6 @@ document.getElementById("section-work").innerHTML = `
                     </div>
                     `
             }).join(' ')}
-            </div>
         </div>
     </div>
 `
-
-document.getElementById("section-personal").innerHTML = `
-    <div class="container-fluid">
-        <div class="d-flex justify-content-center fh5co-heading-white">
-            <h2>Games/Projects I've worked on</h2>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                ${teamGames.map(function (project) {
-                return `
-                    <div class="col-lg-2 col-md-3 col-6" style="margin-bottom:10px;">
-                        <div class="card">
-                            
-                            <img src="${project.imageSrc}" class="card-img-top" style="padding:5%;"/>
-
-                            <div class="card-body">
-                                <h4 class="card-title coral">${project.projectName} </h4>
-                                <h5 class="card-text" style="color:black;">${project.projectType} </h5>
-                                <h5 class="card-text" style="color:black;">${project.description} </h5>
-                                <h5 class="card-text" style="color:black;">${(project.extra == undefined) ? "" : project.extra} </h5>
-                            </div>
-                            <div class="card-footer">
-                                ${(project.download == undefined) ? "" : '<button class="column"><a href="' + project.download + '" target="_blank"> Download </a> </button>'}
-                                ${(project.source == undefined) ? "" : '<button class="column"><a href="' + project.source + '" target="_blank"> Source </a> </button>'}
-                            </div>
-                        </div>
-                    </div>
-                    `
-            }).join(' ')}
-            </div>
-        </div>
-    </div>
-`
-
-if(personalProjects.length > 0)
-{
-
-    document.getElementById("section-personal").innerHTML = `
-
-    <div id="fh5co-work" class="fh5co-bg-dark">
-            <div class="container-fluid">
-                <div class="row animate-box">
-                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-                        <h2>Personal Projects</h2>
-                    </div>
-                </div>
-                <div class="row work-cards">
-                    ${personalProjects.map(function (project) {
-                        return `
-                        <div class="col-md-3 col-padding animate-box">
-                        <div class="cards">
-                        <figure class="card">
-                        <img src="${project.imageSrc}" />
-                        
-                        <figcaption>${project.projectName} 
-                        <p>${project.projectType} </p>
-                        <p>${project.description} </p>
-                        <a target="_blank" href="${project.projectLink}">
-                        <button><span>Play</span></button>
-                        </a>
-                        </figcaption>
-                        </figure>
-                        </div>
-                        </div>
-                        `
-    }).join(' ')}
-                    
-                </div>
-                <div class="row animate-box">
-                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                        <p> <br> <br>
-                            <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">My Itch.io</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `
-}
