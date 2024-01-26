@@ -26,7 +26,6 @@ const workExperience = [
 ];
 
 document.getElementById("section-work").innerHTML = `
-    <div class="container-fluid">
         <div class="container-fluid">
                 ${workExperience.map(function (project, index) {
                     var ret = "";
@@ -161,5 +160,4 @@ document.getElementById("section-work").innerHTML = `
                     `
             }).join(' ')}
         </div>
-    </div>
 `
