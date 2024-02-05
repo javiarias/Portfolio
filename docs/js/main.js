@@ -101,29 +101,25 @@ document.getElementById("myHeader").innerHTML = `
 	<div class="w-100" id="navbar-collapse-1">
 		<ul class="navbar-nav w-100 justify-content-center">
 			<li class="nav-item">
-				<button class="btn btn-light">
-					<a href="https://github.com/javiarias">
-						<i class="bi bi-github"></i>
-					</a>
-				</button></li>
+				<a href="https://github.com/javiarias" class="btn btn-light">
+					<i class="bi bi-github"></i>
+				</a>
+			</li>
 			<li class="nav-item">
-			<button class="btn btn-light">
-				<a href="https://radape.itch.io/">
+				<a href="https://radape.itch.io/" class="btn btn-light">
 					<i class="fab fa-itch-io"></i>
 				</a>
-			</button></li>
+			</li>
 			<li class="nav-item">
-			<button class="btn btn-light">
-				<a href="https://www.linkedin.com/in/javier-arias-6b219a202/">
+				<a href="https://www.linkedin.com/in/javier-arias-6b219a202/" class="btn btn-light">
 					<i class="bi bi-linkedin"></i>
 				</a>
-			</button></li>
+			</li>
 			<li class="nav-item">
-			<button class="btn btn-light">
-				<a href="mailto:franciscojavieragz@gmail.com">
+				<a href="mailto:franciscojavieragz@gmail.com" class="btn btn-light">
 					<i class="bi bi-envelope-fill"></i>
 				</a>
-			</button></li>
+			</li>
 		</ul>
 	</div>
 </nav>
