@@ -9,7 +9,7 @@ const workExperience = [
         extra: "",
         videos: [ ],
         images: [ "https://pm1.aminoapps.com/7515/4877b37997b83f85f36e884d12522baefd5f444cr1-540-359v2_uhq.jpg" ],
-        links: [ ],
+        links: [  ],
     },
     {
         name: "Gigantosaurus: Dino Sports",
@@ -20,8 +20,8 @@ const workExperience = [
         list: [ `Worked in <b>C#</b> with <b>Unity</b>`, `Designed and implemented the UI according to the project owner's specifications.`, `Negotiating features keeping in mind deadlines and limitations of the engine / platform, as well as the artist's needs.`, `Optimizing resource management and UI creation as needed due to console and engine limitations.`, `Bug fixing and cleaning up prototyped code from earlier versions of the project.`, ],
         extra: "",
         videos: [ ],
-        images: [ "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000062573/7a9ccfe45242f41d21a0aa7930ac3b405c6b171d0a9139360fb1f88d94467b39" ],
-        links: [ ],
+        images: [ "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000062573/7a9ccfe45242f41d21a0aa7930ac3b405c6b171d0a9139360fb1f88d94467b39", "images/games/gigantoScreenshot.jpg" ],
+        links: [ {name: "Steam Page", link: "https://store.steampowered.com/app/2238260/Gigantosaurus_Dino_Sports/"} ],
     },
     {
         name: "Star Citizen, Squadron 42",
