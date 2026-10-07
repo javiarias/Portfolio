@@ -1,15 +1,15 @@
 const workExperience = [
     {
-        name: "Project under NDA ",
+        name: "Sesame Street: Friends and Fun",
         role: 'Lead UI / Tools Programmer, Generalist Programmer',
         company: 'Infinigon Games, Outright Games',
-        length: "Jun 2025 - ???",
+        length: "Jun 2025 - Jul 2026",
         description: `An adventure game aimed at kids based on a popular animated kids TV show, to release on PC and consoles, developed for Outright Games. Currently working on implementing and refining the game's UI and UX, as well as handling its translation.`,
         list: [ `Worked in <b>C#</b> with <b>Unity</b>`, `Designed and implemented the UI according to the project owner's specifications.`, `Negotiating features keeping in mind deadlines and limitations of the engine / platform, as well as the artist's needs.`, `Optimizing resource management and UI creation as needed due to console and engine limitations.`, `Bug fixing and cleaning up prototyped code from earlier versions of the project.`, ],
         extra: "",
         videos: [ ],
-        images: [ "https://pm1.aminoapps.com/7515/4877b37997b83f85f36e884d12522baefd5f444cr1-540-359v2_uhq.jpg",  ],
-        links: [  ],
+        images: [ "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3930330/70039ba9c1c4d97e2ad404482eb3cd32f876dee2/capsule_616x353.jpg?t=1787749819" ],
+        links: [ {name: "Steam Page", link: "https://store.steampowered.com/app/3930330/Sesame_Street_Friends__Fun/"} ],
     },
     {
         name: "DreamWorks Gabby’s Dollhouse: Ready to Party",
